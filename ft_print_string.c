@@ -2,8 +2,9 @@
 
 int ft_print_string(char *str)
 {
-    int len = 0;
+    int len;
 
+    len = 0;
     if (!str)
         str = "(null)";
     while (str[len])

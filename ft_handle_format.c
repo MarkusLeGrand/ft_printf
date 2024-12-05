@@ -2,7 +2,9 @@
 
 int handle_format(const char *format, va_list args)
 {
-    int printed_chars = 0;
+    int printed_chars;
+
+    printed_chars = 0;
     while (*format)
     {
         if (*format == '%' && *(format + 1))
